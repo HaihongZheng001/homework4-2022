@@ -72,7 +72,7 @@ div.pricing {
 
 /*9*/
 .gallery img {
-    border: solid #50C7C7;
+    border: solid 10px#50C7C7;
     margin: 10px;
     width: 300px;
 
@@ -94,7 +94,7 @@ div.gallery {
 }
 
 #logo {
-    animation: transition 5s infinite;
+    animation: transition 5s;
     animation-fill-mode: forwards;
 }
 
@@ -113,9 +113,14 @@ div.gallery {
         align-content: center;
     }
 
+    div.card ul li:first-child {
+
+        text-align: left;
+    
+    }
+
     /*13*/
     div.card {
-        flex-flow: row no-wrap;
         flex-basis: 250px;
     }
 
@@ -137,6 +142,62 @@ div.gallery {
     }
 }
 
+
+
+@media print {
+    /*16*/
+    body {
+        background-image: none;
+    }
+
+    /*17*/
+    nav {
+        width: 100%;
+    }
+    
+    .nav_links {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    /*18*/
+    .pricing {
+        flex-wrap: nowrap;
+        align-items: flex-end;
+    }
+
+
+    /*19*/
+
+    .card {
+        border: 2px solid #45ADDD;
+        flex-basis: 325px;
+    }
+
+    /*20*/
+
+    #gallery {
+        display: none;
+    }
+
+    div.gallery {
+        display: none;
+    }
+
+
+
+    /*21*/
+    .card li:nth-child(2)::after {
+        content: "\1F44D";
+    }
+
+
+    /*16*/
+    /*16*/
+}
+
+
+/*
 @media print {
     body {
         background-image: none;
@@ -174,6 +235,7 @@ div.gallery {
     }
     
 }
+*/
 
 
 
