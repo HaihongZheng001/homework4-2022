@@ -8,14 +8,14 @@ body {
 /*2*/
 header {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     align-items: center;
 }
 
 /*3*/
 .nav_links {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     align-content: center;
 }
 
@@ -42,9 +42,9 @@ header {
 }
 
 /*6*/ /*8*/
-div.card {
+.card {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 0px;
@@ -52,13 +52,7 @@ div.card {
     flex-basis: 450px;
 }
 
-/*8*/
 
-div.card ul li:first-child {
-
-    text-align: center;
-
-}
 
 /*7*/
 
@@ -79,7 +73,7 @@ div.pricing {
 }
 
 /*10*/
-div.gallery {
+.gallery {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -109,19 +103,15 @@ div.gallery {
     }
 
     .nav_links {
-        flex-flow: row wrap;
-        align-content: center;
+        flex-direction: row;
     }
 
-    div.card ul li:first-child {
-
-        text-align: left;
     
-    }
 
     /*13*/
-    div.card {
+    .card {
         flex-basis: 250px;
+        flex-direction: column;
     }
 
     /*14*/
@@ -169,7 +159,8 @@ div.gallery {
 
     /*19*/
 
-    div.card {
+    .card {
+        flex-direction: column;
         border: 2px solid #45ADDD;
         flex-basis: 325px;
     }
@@ -180,7 +171,7 @@ div.gallery {
         display: none;
     }
 
-    div.gallery {
+    .gallery {
         display: none;
     }
 
@@ -192,8 +183,7 @@ div.gallery {
     }
 
 
-    /*16*/
-    /*16*/
+    
 }
 
 
